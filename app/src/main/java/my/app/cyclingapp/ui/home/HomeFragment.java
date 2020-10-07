@@ -36,7 +36,6 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Map;

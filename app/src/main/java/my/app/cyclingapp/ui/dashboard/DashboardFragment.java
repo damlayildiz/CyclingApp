@@ -87,25 +87,30 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void writeTheGoals() {
-        int w = 100;
-        int m = 100;
-        int y = 100;
+        double w = 0;
+        double m = 0;
+        double y = 0;
+
         int weekly_goal = preferences.getInt("weekly", 0);
         int monthly_goal = preferences.getInt("monthly", 0);
         int yearly_goal = preferences.getInt("yearly", 0);
-        String s = "current goals status: (Completed / Goal)\n\n" ;
         int weekly_completed = preferences.getInt("week", 0);
         int monthly_completed = preferences.getInt("month", 0);
         int yearly_completed = preferences.getInt("year", 0);
+
+        String s = "current goals status: (Completed / Goal)\n\n" ;
+
+
         if (weekly_goal!=0){
-            w = weekly_completed/weekly_goal*100;
+            w = (double) weekly_completed/weekly_goal*100;
         }
         if (monthly_goal!=0){
-            m = monthly_completed/monthly_goal*100;
+            m = (double) monthly_completed/monthly_goal*100;
         }
         if (yearly_goal!=0){
-            y = yearly_completed/yearly_goal*100;
+            y = (double) yearly_completed/yearly_goal*100;
         }
+
         s+="*weekly status: " + weekly_completed + "/" + weekly_goal + "   % " + w + " completed " +"\n";
         s+="*monthly status: " + monthly_completed + "/" + monthly_goal + "   % " + m + " completed " +"\n";
         s+="*yearly status: " + yearly_completed + "/" + yearly_goal + "   % " + y + " completed " +"\n";

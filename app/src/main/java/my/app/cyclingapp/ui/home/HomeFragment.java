@@ -113,7 +113,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
             check_date();
         }
 
-        Log.i("preferences",preferences.getAll().toString());
+        Log.i("preferences", preferences.getAll().toString());
         Log.i("km_book_to_string", km_book.toString());
         Log.i("weather", preferences.getString("weather", ""));
 
@@ -126,7 +126,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         }
 
         LocalDate today_date = LocalDate.now();
-        Log.i("tag", String.valueOf(today_date));
     }
 
     private void setWeatherIcon() {
@@ -225,15 +224,19 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         if (!(thisWeek == preferences.getInt("lastWeek", 0))){
             editor.putInt("lastWeek", thisWeek);
             editor.putBoolean("congratsWeek", false);
+            editor.putInt("week", 0);
         }
         if (!(month == preferences.getInt("lastMonth", 0))){
             editor.putInt("lastMonth", month);
             editor.putBoolean("congratsMonth", false);
+            editor.putInt("month", 0);
         }
         if (year!=preferences.getInt("current year", 0)){
             editor.putInt("current year", year);
             editor.putBoolean("congratsYear", false);
+            editor.putInt("year", 0);
         }
+
         editor.putBoolean("dateChecked", true);
         editor.apply();
     }

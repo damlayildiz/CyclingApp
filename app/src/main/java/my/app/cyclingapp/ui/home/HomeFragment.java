@@ -202,7 +202,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(cx, "1")
                 .setSmallIcon(R.drawable.ic_baseline_directions_bike_24)
-                .setContentTitle("Don't Forget To Take Your: !")
+                .setContentTitle("Don't Forget To Take Your:")
                 .setContentText("Reminder!")
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText(notificationText))

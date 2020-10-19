@@ -7,6 +7,8 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import my.app.cyclingapp.ui.home.HomeFragment;
+
 public class AlertReciever extends BroadcastReceiver {
         @Override
         public void onReceive(Context cx, Intent intent) {
@@ -14,7 +16,6 @@ public class AlertReciever extends BroadcastReceiver {
 
             SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(cx);
             SharedPreferences.Editor editor = preferences.edit();
-
             editor.putBoolean("alarm", true);
             editor.apply();
 

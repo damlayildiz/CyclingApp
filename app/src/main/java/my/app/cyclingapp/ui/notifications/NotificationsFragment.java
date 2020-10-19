@@ -164,6 +164,7 @@ public class NotificationsFragment extends Fragment implements View.OnClickListe
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
             Log.i("alarm", c.toString());
             Log.i("alarm", diff+" ");
+            Log.i("alarm", (c.getTimeInMillis() + " "));
             i+=1;
         }
     }

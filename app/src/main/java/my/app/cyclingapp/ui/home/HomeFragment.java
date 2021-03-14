@@ -120,7 +120,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         getWeather();
         setWeatherIcon();
 
-        if(feelTemp>=10 && humidity<90 && weatherId!=781 && weatherId/100 != 2 && weatherId/100 != 5
+        if(wind<=20 && feelTemp<=30 && feelTemp>=10 && humidity<70 && weatherId!=781 && weatherId/100 != 2 && weatherId/100 != 5
                 && weatherId/100 != 6){
             wasItAlarm();
         }

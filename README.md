@@ -9,19 +9,21 @@ This is an android app for cycling enthusiasts like myself. Implemented with Jav
 
 - **Goals:**
  
-Users can create weekly, monthly and yearly kilometre goals. And when the user reaches her goal, the app celebrates the user with a confetti. This behaviour is implemented with [Konfetti](https://github.com/DanielMartinus/Konfetti) library. 
+  Users can create weekly, monthly and yearly kilometre goals. And when the user reaches her goal, the app celebrates the user with a confetti. This behaviour is implemented with [Konfetti](https://github.com/DanielMartinus/Konfetti) library. 
+
 - **Stats:**
  
-After every ride, user can save the distance and look at their previous records from the calendar. They can also see the total distance they have ridden in a particular week, month or a year. 
+  After every ride, user can save the distance and look at their previous records from the calendar. They can also see the total distance they have ridden in a particular week, month or a year. 
+  
 - **Alarm:**
 
  >To avoid traffic and sometimes the sun, cyclists usually get up early. And if the weather is not suitable for riding, then you are awake at 6 am for nothing. This was my main motivation for creating this app.  
  
-Users can create alarms for the days they want to ride. But the alarm rings only if the wind is under 20 km/h humidity is below 60% and temperature is between 10ºC and 30ºC at that hour. 
-
+  Users can create alarms for the days they want to ride. But the alarm rings only if the wind is under 20 km/h humidity is below 60% and temperature is between 10ºC and 30ºC at that hour. 
 
 - **Don't forget:**
-30 minutes after the alarm is closed user receives a notification which includes a list of things she has to take  like water bottles or helmet before leaving home. And this notifications only stop when all of the things on list is checked from the *home* page. 
+
+  30 minutes after the alarm is closed user receives a notification which includes a list of things she has to take  like water bottles or helmet before leaving home. And this notifications only stop when all of the things on list is checked from the *home* page. 
 
 ## Screenshots
 

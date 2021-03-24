@@ -1,6 +1,6 @@
 # Cycling App
 
-This is an android app for cycling enthusiasts like myself. Implemented with Java, XML, and [OpenWeatherMap API](https://openweathermap.org/api). I created this app to solve specifically the problems and difficulties I faced. 
+This is an android app for cycling enthusiasts like myself. Implemented with Java, XML, and [OpenWeatherMap API](https://openweathermap.org/api). I created this app to solve specifically the problems and difficulties I face. 
 
 ## Features
 - **Current weather:**
@@ -19,7 +19,7 @@ This is an android app for cycling enthusiasts like myself. Implemented with Jav
 
   Users can create alarms for the days they want to ride. But the alarm rings only if the wind is under 20 km/h humidity is below 60% and temperature is between 10ºC and 30ºC at that hour. 
 
->To avoid traffic and sometimes the sun, cyclists usually get up early. And if the weather is not suitable for riding, then you are awake at 6 am for nothing. This was my main motivation for creating this app.  
+>To avoid traffic and sometimes heat, cyclists usually get up early. And if the weather is not suitable for riding, then you are awake at 6 am for nothing. This was my main motivation for creating this app.  
 
 - **Don't forget:**
 
